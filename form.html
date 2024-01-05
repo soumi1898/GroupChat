@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Lister</title>
+    <style>
+        body{
+            background-image:'hogwarts.jpg';
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        form {
+            /* background-color: orchid; */
+            text-align: center;
+            border: 5px;
+
+           /* padding-left: 500px;
+            padding-right: 500px;*/
+        }
+        
+        input{
+            width:1000px;
+            color:blueviolet;
+
+        }
+    </style>
+    </head>
+    <body>
+        <header id="main-header">
+            <div class="container">
+                <h1 id="header-title">Booking Appointment</h1>
+                <!-- <div class="col-md-6 align-self-center">
+                    <input type="text" class="form-control" id="filter" placeholder="Search items..">
+                </div> -->
+            </div>
+        </header>
+        <div class="container">
+            <h2>Add User</h2>
+                <form id="addForm" class="form-inline mb-3">
+                    <label name="username">Name</label><br>
+                    <input type="text" class="for-control mr-2" id="username"><br>
+
+                    <label name="email">Email</label><br>
+                    <input type="email" class="for-control mr-2" id="email"><br>
+
+                    <label name="phn">Phone</label><br>
+                    <input type="number" class="for-control mr-2" id="phn"><br>
+
+                    <label name="time">Time</label><br>
+                    <input type="datetime" class="for-control mr-2" id="time"><br>
+
+                    <!-- <label name="house">House</label><br>
+                    <select id="house" name="house" class="for-control mr-2">
+                        <option value="Gryffindor">Gryffindor</option>
+                        <option value="Huffelpuff">Huffelpuff</option>
+                        <option value="Ravenclaw">Ravenclaw</option>
+                        <option value="Slytherin">Slytherin</option>
+                    </select><br><br> -->
+                    <!-- <input type="submit"> -->
+
+                    <button type="submit">GET A CALL</button>
+                </form>
+        </div>
+        <div class="display">
+            <ul id="items">
+                <!-- <li></li> -->
+            </ul>
+        </div>
+        <script src="form.js" type="text/javascript">
+           
+        </script>
+</html>
