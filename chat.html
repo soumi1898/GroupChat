@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add-Product</title>
+</head>
+<body>
+    <header>
+        <h1>Chat with us..</h1>
+    </header>
+
+    <main>
+        <form onsubmit="document.getElementById('username').value=localStorage.getItem('username')" action="/routes/chat" method="POST">
+            <input type="text" name="message" id="message" placeholder="write your message here">
+            <input type="hidden" name="username" id="username">
+            <button type="submit">send</button>
+        </form>
+    </main>
+</body>
+</html>
